@@ -1,5 +1,5 @@
 def calculate_bmi(weight, height):
-    bmi = weight / (height ** 2)
+    bmi = weight / ((height/100) ** 2)
     return bmi
 
 def get_bmi_category(bmi):
@@ -14,8 +14,8 @@ def get_bmi_category(bmi):
 
 def main():
     try:
-        weight = float(input("Enter your weight in kilograms: "))
-        height = float(input("Enter your height in centimeters: "))
+        weight = float(input("Enter your weight in kg: "))
+        height = float(input("Enter your height in cm: "))
         
         if weight <= 0 or height <= 0:
             raise ValueError("Height and weight must be greater than zero.")
