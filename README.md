@@ -1,4 +1,4 @@
 
-simple BMI calculator working in terminal
+simple BMI calculator
 
 enter your weight in kg and height in cm
