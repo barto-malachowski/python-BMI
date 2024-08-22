@@ -18,7 +18,7 @@ def main():
         height = float(input("Enter your height in cm: "))
         
         if weight <= 0 or height <= 0:
-            raise ValueError("Height and weight must be greater than zero.")
+            raise ValueError("Height and weight must be greater than 0.")
         
         bmi = calculate_bmi(weight, height)
         category = get_bmi_category(bmi)
